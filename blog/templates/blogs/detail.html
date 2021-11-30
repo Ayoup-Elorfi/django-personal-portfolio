@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-center mt-5" id="blogdetailtitle">{{object.title}}</h1>
+
+<h5 class="text-center text-muted mb-5">{{ object.blog_date|date:'D M Y'|upper }}</h5>
+<p>{{object.content}}</p>
+
+{% endblock %}
